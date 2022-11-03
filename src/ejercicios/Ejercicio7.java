@@ -25,7 +25,7 @@ public class Ejercicio7 {
         System.out.println("\n" + "-------------------------------" + "\n");
 
         // ! Creamos el Bucle for en el cual iremos decrementando n y se la iremos sumando a la variable resultado
-        for (n = nAux; n > 0; n--){
+        for ( ; n > 0; n--){
             resultado *= n;
         }
 
