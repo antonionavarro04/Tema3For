@@ -6,8 +6,9 @@ import java.util.Scanner; import java.util.Locale;
 public class Ejercicio5 {
     public static void main(String[] args) {
         // ? Pedir 10 numeros por teclado y mostar la media
-        // ^ Declaramos las variables n (numero introducido) e i (incremento)
-        long n, i;
+        // ^ Declaramos las variables n (numero introducido), i (incremento) y resultado para guardar la suma de los numeros
+        byte i;
+        long n;
         double resultado = 0;
 
         // ^ Creamos el Scanner en la variable read y cambiamos su formato a US
