@@ -2,7 +2,7 @@ package ejercicios;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        // ? Programa que con un bucle for muestre los número pares desde el 1 al 200
+        // ? Programa que con un bucle for muestre los números pares desde el 1 al 200
         // ^ Declaramos la variable i (incremento)
         short i;
 
