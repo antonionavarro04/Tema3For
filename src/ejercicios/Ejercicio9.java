@@ -22,21 +22,12 @@ public class Ejercicio9 {
 
         // ! Bucle for en el cual primero comprobaremos si es par diferente de 2, de ser así no es primo. Luego comprobaremos si siendo impar es divisible entre 3, 5, 7 y 11. Si es divisible por alguno de ellos no es primo.
         for (byte i = 2; i <= 11; i++) {
-            if (n % 2 == 0 && n != 2){
-                i = 11; // * Si el numero es divisible entre 2, salimos del bucle for ya que nuestro numero sera primo
+            if (n % i == 0 && n != i){ // * Si el numero es divisible entre i y no es igual a i
                 esPrimo = false; // * Cambiamos el valor de esPrimo a false
-            } else {
-                if (n % i == 0 && n != i){ // * Si el numero es divisible entre i y no es igual a i
-                    esPrimo = false; // * Cambiamos el valor de esPrimo a false
-                }
             }
         }
         
         // ! Mostramos si el numero es primo o no
-        if (esPrimo == true){
-            System.out.println("El número " + n + " es primo"); // * Si esPrimo es true, mostramos que es primo
-        } else {
-            System.out.println("El número " + n + " no es primo"); // * Si esPrimo es false, mostramos que no es primo
-        }
+        System.out.println(esPrimo ? "El número " + n + " es primo" : "El número " + n + " no es primo");
     }    
 }
