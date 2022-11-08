@@ -22,7 +22,10 @@ public class Ejercicio9 {
 
         // ! Bucle for en el cual comprobamos si el numero es primo o no, si su modulo es 0 no es primo. De esta manera dividiremos el numero por todos los numeros hasta llegar al suyo mismo
         for (i = 2; i < n; i++) {
-            if (n % i == 0 && n != i); esPrimo = false; // * Si el numero es divisible entre otro numero y no es el mismo, no es primo
+            if (n % i == 0 && n != i){
+                esPrimo = false;
+                break;
+            }
         }
         
         // ! Mostramos si el numero es primo o no mediante un operador ternario
